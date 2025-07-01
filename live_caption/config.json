@@ -1,0 +1,13 @@
+{
+    "record_duration": 30,
+    "audio_device": "BlackHole 2ch",
+    "whisper_model": "base",
+    "language": "en",
+    "output_dirs": {
+        "captions": "captions",
+        "audio_chunks": "audio_chunks"
+    },
+    "log_file": "caption.log",
+    "log_max_bytes": 50000000,
+    "log_backup_count": 7
+}
