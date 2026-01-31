@@ -38,11 +38,8 @@
   audio_queue = queue.Queue()
   
   def audio_callback(in_data, frame_count, time_info, status):
-  
       # Convert buffer to float32 array for Whisper
-      
       audio_queue.put(np.frombuffer(in_data, dtype=np.int16).astype(np.float32) / 32768.0)
-      
       return (None, pyaudio.paContinue)
       
   
