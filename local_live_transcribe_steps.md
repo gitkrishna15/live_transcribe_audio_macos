@@ -50,15 +50,10 @@
   p = pyaudio.PyAudio()
   
   stream = p.open(format=pyaudio.paInt16,
-  
                   channels=1,
-                  
-                  rate=SAMPLE_RATE,
-                  
-                  input=True,
-                  
+                  rate=SAMPLE_RATE,           
+                  input=True,        
                   frames_per_buffer=CHUNK_SIZE,
-                  
                   stream_callback=audio_callback)
                   
   
