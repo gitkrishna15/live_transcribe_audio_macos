@@ -1,8 +1,12 @@
 # Install dependencies
   brew install ffmpeg
+  
   python3 -m pip install --upgrade pip
+  
   brew install portaudio
+  
   pip3 install pyaudio openai-whisper numpy torch
+  
 
 # Save below script as live_transcribe.py
 
